@@ -1,1 +1,147 @@
-<p>events works!</p>
+<!-- HERO -->
+<section class="bg-dark text-white text-center d-flex align-items-center" style="height: 50vh;">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Événements</h1>
+    <p class="lead">Découvrez nos prochains rendez-vous spirituels</p>
+  </div>
+</section>
+
+<!-- FILTRE -->
+<section class="container py-4">
+  <div class="row justify-content-center">
+
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Rechercher un événement...">
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select">
+        <option selected>Catégorie</option>
+        <option>Culte</option>
+        <option>Prière</option>
+        <option>Jeunesse</option>
+      </select>
+    </div>
+
+  </div>
+</section>
+
+<!-- LISTE DES EVENEMENTS -->
+<section class="container py-5">
+  <div class="row">
+
+    <!-- EVENT 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="assets/event1.jpg" class="card-img-top" alt="event">
+
+        <div class="card-body">
+          <h5 class="card-title">Culte du dimanche</h5>
+          <p class="card-text">
+            Un moment puissant de louange, adoration et enseignement.
+          </p>
+
+          <p><strong>📅</strong> Dimanche - 9h</p>
+          <p><strong>📍</strong> Église principale</p>
+        </div>
+
+        <div class="card-footer bg-white border-0">
+          <a routerLink="/contact" class="btn btn-primary w-100">
+            Participer
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENT 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="assets/event2.jpg" class="card-img-top" alt="event">
+
+        <div class="card-body">
+          <h5 class="card-title">Étude biblique</h5>
+          <p class="card-text">
+            Approfondissez votre connaissance de la Parole de Dieu.
+          </p>
+
+          <p><strong>📅</strong> Mercredi - 18h</p>
+          <p><strong>📍</strong> Salle de réunion</p>
+        </div>
+
+        <div class="card-footer bg-white border-0">
+          <a routerLink="/contact" class="btn btn-primary w-100">
+            Participer
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENT 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="assets/event3.jpg" class="card-img-top" alt="event">
+
+        <div class="card-body">
+          <h5 class="card-title">Veillée de prière</h5>
+          <p class="card-text">
+            Une nuit consacrée à la prière et à la présence de Dieu.
+          </p>
+
+          <p><strong>📅</strong> Vendredi - 20h</p>
+          <p><strong>📍</strong> Sanctuaire</p>
+        </div>
+
+        <div class="card-footer bg-white border-0">
+          <a routerLink="/contact" class="btn btn-primary w-100">
+            Participer
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EVENEMENT VEDETTE -->
+<section class="bg-light py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-5">Événement spécial</h2>
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <img src="assets/special-event.jpg" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-6">
+        <h3>Conférence spirituelle 2026</h3>
+        <p>
+          Un grand moment de réveil avec des orateurs inspirés, 
+          des temps forts de louange et des miracles.
+        </p>
+
+        <p><strong>📅</strong> 15 - 17 Avril 2026</p>
+        <p><strong>📍</strong> Tabernacle La Pierre de Faîte</p>
+
+        <a routerLink="/contact" class="btn btn-dark">
+          S'inscrire
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h2>Ne ratez aucun événement</h2>
+    <p>Rejoignez-nous et vivez des moments puissants avec Dieu</p>
+
+    <a routerLink="/contact" class="btn btn-primary btn-lg">
+      Nous contacter
+    </a>
+  </div>
+</section>

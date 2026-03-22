@@ -1,1 +1,118 @@
-<p>sermons works!</p>
+<!-- HERO -->
+<section class="bg-dark text-white text-center d-flex align-items-center" style="height: 50vh;">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Sermons</h1>
+    <p class="lead">Écoutez et soyez transformés par la Parole de Dieu</p>
+  </div>
+</section>
+
+<!-- FILTRE -->
+<section class="container py-4">
+  <div class="row justify-content-center">
+
+    <div class="col-md-6">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Rechercher un sermon..."
+      >
+    </div>
+
+  </div>
+</section>
+
+<!-- LISTE DES SERMONS -->
+<section class="container py-5">
+  <div class="row">
+
+    <!-- SERMON 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="assets/sermon1.jpg" class="card-img-top" alt="sermon">
+
+        <div class="card-body">
+          <h5 class="card-title">La foi qui déplace les montagnes</h5>
+          <p class="card-text">
+            Découvrez comment développer une foi inébranlable en Dieu.
+          </p>
+        </div>
+
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">Dimanche 10 Mars 2026</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERMON 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="assets/sermon2.jpg" class="card-img-top" alt="sermon">
+
+        <div class="card-body">
+          <h5 class="card-title">Marcher dans l'amour de Dieu</h5>
+          <p class="card-text">
+            L'amour est la clé de la vie chrétienne.
+          </p>
+        </div>
+
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">Dimanche 3 Mars 2026</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERMON 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="assets/sermon3.jpg" class="card-img-top" alt="sermon">
+
+        <div class="card-body">
+          <h5 class="card-title">La puissance de la prière</h5>
+          <p class="card-text">
+            Apprenez à prier efficacement.
+          </p>
+        </div>
+
+        <div class="card-footer bg-white border-0">
+          <small class="text-muted">Dimanche 25 Février 2026</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERMON VEDETTE (VIDEO) -->
+<section class="bg-light py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-5">Sermon en vedette</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="YouTube video"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h2>Ne manquez aucun message</h2>
+    <p>Suivez-nous pour rester connecté à la parole de Dieu</p>
+
+    <a routerLink="/contact" class="btn btn-primary btn-lg">
+      Nous contacter
+    </a>
+  </div>
+</section>
