@@ -9,3 +9,15 @@ background-position:center;
 .ev{
     width: 1274px;
 }
+.fond{
+    background: url('/assets/images/fond1.png');
+}
+
+.fond22{
+    background:url('/assets/images/fond22.png');
+    
+}
+
+.fond223{
+background:url('/assets/images/fond3.png');
+}
