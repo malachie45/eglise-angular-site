@@ -1,0 +1,8 @@
+.logo{
+   height:50px;
+   width:auto;
+   background: transparent !important;
+    object-fit: contain;
+
+    display: block;
+}
