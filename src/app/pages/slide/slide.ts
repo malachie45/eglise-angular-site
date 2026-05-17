@@ -45,7 +45,7 @@ export class Slide implements AfterViewInit, OnDestroy {
       this.currentIndex =
         (this.currentIndex + 1) % this.slides.length;
 
-    }, 3000);
+    }, 20);
 
   }
 
