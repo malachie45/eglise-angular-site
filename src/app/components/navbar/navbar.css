@@ -6,3 +6,24 @@
 
     display: block;
 }
+
+.brand-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo{
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+.church-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
