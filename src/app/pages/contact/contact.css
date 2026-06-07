@@ -1,0 +1,164 @@
+/* ==================================
+HERO
+================================== */
+
+.contact-hero{
+    height:50vh;
+}
+
+.hero-title{
+    color:#D4AF37;
+    font-size:4rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.hero-title::after{
+    content:"";
+    display:block;
+    width:150px;
+    height:4px;
+    margin:20px auto;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #D4AF37,
+        #FFD700,
+        #D4AF37,
+        transparent
+    );
+}
+
+.hero-subtitle{
+    max-width:850px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:1.8;
+    color:rgba(255,255,255,.9);
+}
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:2.5rem;
+    }
+
+    .hero-subtitle{
+        font-size:1rem;
+        padding:0 15px;
+    }
+
+}
+
+/* ==================================
+CARTES
+================================== */
+
+.contact-card,
+.contact-form-card{
+background:white;
+border-radius:20px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+height:100%;
+}
+
+.contact-card{
+border-top:5px solid #D4AF37;
+}
+
+.contact-card h3,
+.contact-form-card h3{
+color:#D4AF37;
+font-weight:700;
+margin-bottom:25px;
+}
+
+/* ==================================
+INFOS
+================================== */
+
+.contact-item{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+}
+
+.contact-item span{
+font-size:1.5rem;
+}
+
+.contact-item p{
+margin:0;
+color:#666;
+}
+
+.schedule-list{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.schedule-list li{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+border-bottom:1px solid #eee;
+}
+
+/* ==================================
+FORMULAIRE
+================================== */
+
+.custom-field{
+border-radius:15px;
+padding:15px 20px;
+border:2px solid #e9e9e9;
+}
+
+.custom-field:focus{
+border-color:#D4AF37;
+box-shadow:none;
+}
+
+textarea.custom-field{
+resize:none;
+}
+
+/* ==================================
+MAP
+================================== */
+
+.map-section{
+height:450px;
+}
+
+.map-section iframe{
+width:100%;
+height:100%;
+border:none;
+}
+
+/* ==================================
+CTA
+================================== */
+
+.cta-section{
+background:#111;
+}
+
+/* ==================================
+RESPONSIVE
+================================== */
+
+@media(max-width:768px){
+
+
+.contact-card{
+    margin-bottom:30px;
+}
+
+
+}

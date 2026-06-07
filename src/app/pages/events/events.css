@@ -1,0 +1,155 @@
+/* ==================================
+HERO
+================================== */
+
+.event-hero{
+    height:50vh;
+}
+
+.hero-title{
+    color:#D4AF37;
+    font-size:4rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.hero-title::after{
+    content:"";
+    display:block;
+    width:150px;
+    height:4px;
+    margin:20px auto;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #D4AF37,
+        #FFD700,
+        #D4AF37,
+        transparent
+    );
+}
+
+.hero-subtitle{
+    max-width:850px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:1.8;
+    color:rgba(255,255,255,.9);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:2.5rem;
+    }
+
+    .hero-subtitle{
+        font-size:1rem;
+        padding:0 15px;
+    }
+}
+/* ==================================
+FILTRES
+================================== */
+
+.custom-input{
+border-radius:50px;
+padding:14px 20px;
+border:2px solid #e5e5e5;
+}
+
+.custom-input:focus{
+border-color:#D4AF37;
+box-shadow:none;
+}
+
+/* ==================================
+CARTE EVENEMENT
+================================== */
+
+.event-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+height:100%;
+}
+
+.event-card:hover{
+transform:translateY(-8px);
+}
+
+.event-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.event-content{
+padding:25px;
+}
+
+.event-content h4{
+color:#D4AF37;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.event-info{
+margin-top:10px;
+color:#666;
+}
+
+/* ==================================
+EVENEMENT VEDETTE
+================================== */
+
+.featured-event-section{
+background:#f8f9fa;
+}
+
+.featured-event-image{
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.featured-title{
+color:#D4AF37;
+font-weight:700;
+margin-bottom:20px;
+}
+
+/* ==================================
+BOUTON OR
+================================== */
+
+.btn-gold{
+background:#D4AF37;
+color:white;
+border:none;
+padding:12px 35px;
+border-radius:50px;
+font-weight:600;
+}
+
+.btn-gold:hover{
+background:#b89322;
+color:white;
+}
+
+/* ==================================
+RESPONSIVE
+================================== */
+
+@media(max-width:768px){
+
+.event-card img{
+    height:220px;
+}
+
+
+}

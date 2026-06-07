@@ -1,165 +1,242 @@
-<!-- HERO -->
- 
-<!-- <section class="hero text-white text-center d-flex align-items-center">
-  <div class="container">
-    <h1 class="display-4 fw-bold">Bienvenue au Tabernacle La Pierre de Faîte</h1>
-    <p class="lead">Une communauté qui partage l'amour de Dieu</p>
-
-    <a routerLink="/sermons" class="btn btn-primary btn-lg me-3">
-      Voir les sermons
-    </a>
-
-    <a routerLink="/contact" class="btn btn-outline-light btn-lg">
-      Nous rejoindre
-    </a>
-  </div>
-</section> -->
+<!-- =====================================
+     SLIDER
+===================================== -->
 
 <app-slide></app-slide>
 
-<!-- A PROPOS -->
+<!-- =====================================
+     MISSION
+===================================== -->
+
 <section class="container py-5">
-  <div class="row align-items-center">
 
-    <div class="col-md-6">
-      <img src="assets/images/STATURE.png" class="img-fluid rounded">
+```
+<div class="row align-items-center g-5">
+
+    <div class="col-lg-6">
+        <img src="assets/images/christano.jpg"
+             class="img-fluid home-image"
+             alt="Mission">
     </div>
 
-    <div class="col-md-6">
-      <h2>Notre mission</h2>
-      <p>
-        Notre mission est de répandre l’Évangile, servir la communauté et former des croyants capables de refléter la stature de l’homme parfait en Jésus-Christ.
-      </p>
+    <div class="col-lg-6">
 
-      <a routerLink="/about" class="btn btn-dark">
-        En savoir plus
-      </a>
+        <h2 class="section-title text-start">
+            Notre Mission
+        </h2>
+
+        <p class="home-text">
+            Notre mission est de répandre l'Évangile, servir la communauté
+            et former des croyants capables de refléter la stature de
+            l'homme parfait en Jésus-Christ.
+        </p>
+
+        <a routerLink="/about" class="btn btn-gold mt-3">
+            En savoir plus
+        </a>
+
     </div>
 
-  </div>
+</div>
+```
+
 </section>
 
+<!-- =====================================
+     MINISTERES
+===================================== -->
 
-<!-- MINISTERES -->
 <section class="fond py-5">
+
+```
 <div class="container">
 
-<h2 class="text-center text-white mb-5">Nos Ministères</h2>
+    <h2 class="section-title text-white">
+        Nos Ministères
+    </h2>
 
-<div class="row text-center">
+    <p class="section-subtitle text-white">
+        Des espaces de croissance, de service et d'édification.
+    </p>
 
-<div class="col-md-4">
-<div class="card shadow-sm">
-<div class="card-body">
-<h4>Prière</h4>
-<p>Moments puissants de prière et d'intercession.</p>
-</div>
-</div>
-</div>
+    <div class="row g-4">
 
-<div class="col-md-4">
-<div class="card shadow-sm">
-<div class="card-body">
-<h4>Jeunesse</h4>
-<p>Former une génération forte dans la foi.</p>
-</div>
-</div>
-</div>
+        <div class="col-md-4">
 
-<div class="col-md-4">
-<div class="card shadow-sm">
-<div class="card-body">
-<h4>Mission</h4>
-<p>Évangélisation et aide sociale.</p>
-</div>
-</div>
-</div>
+            <div class="ministry-card">
+
+                <h4>Prière</h4>
+
+                <p>
+                    Moments puissants de prière,
+                    d'intercession et de communion avec Dieu.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="ministry-card">
+
+                <h4>Jeunesse</h4>
+
+                <p>
+                    Former une génération forte,
+                    engagée et passionnée pour Christ.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="ministry-card">
+
+                <h4>Mission</h4>
+
+                <p>
+                    Évangélisation, accompagnement
+                    et impact dans la société.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
+```
 
-</div>
 </section>
 
+<!-- =====================================
+     SERMON
+===================================== -->
 
-<!-- SERMON VIDEO -->
 <section class="container py-5">
 
-<h2 class="text-center mb-5">Dernier sermon</h2>
+```
+<h2 class="section-title">
+    Dernier Sermon
+</h2>
+
+<p class="section-subtitle">
+    Écoutez la parole de Dieu et soyez édifiés.
+</p>
 
 <div class="row justify-content-center">
 
-<div class="col-md-8">
+    <div class="col-lg-8">
 
-<div class="ratio ratio-16x9">
-<iframe 
-src="https://www.youtube.com/embed/live2?backup=1"
-title="YouTube video"
-allowfullscreen>
-</iframe>
-</div>
+        <div class="sermon-video">
+
+            <div class="ratio ratio-16x9">
+
+                <iframe
+                    src="https://www.youtube.com/embed/live2?backup=1"
+                    title="YouTube video"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
-
-</div>
+```
 
 </section>
 
+<!-- =====================================
+     EVENEMENTS
+===================================== -->
 
-<!-- EVENEMENTS -->
-<section class="fond22 ev py-5">
+<section class="events-section py-5">
 
+```
 <div class="container">
 
-<h2 class="text-center mb-5">Prochains événements</h2>
+    <h2 class="section-title text-white">
+        Prochains Événements
+    </h2>
 
-<div class="row">
+    <p class="section-subtitle text-white">
+        Participez à nos rendez-vous spirituels.
+    </p>
 
-<div class="col-md-4">
-<div class="card shadow-sm">
-<div class="card-body">
-<h5>Culte du dimanche</h5>
-<p>Chaque dimanche à 9h</p>
-</div>
-</div>
-</div>
+    <div class="row g-4">
 
-<div class="col-md-4">
-<div class="card shadow-sm">
-<div class="card-body">
-<h5>Étude biblique</h5>
-<p>Mercredi à 18h</p>
-</div>
-</div>
-</div>
+        <div class="col-md-4">
 
-<div class="col-md-4">
-<div class="card shadow-sm">
-<div class="card-body">
-<h5>Veillée de prière</h5>
-<p>Vendredi à 20h</p>
-</div>
-</div>
-</div>
+            <div class="event-card">
+
+                <h4>Culte du Dimanche</h4>
+
+                <p>Chaque dimanche à 9h00</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="event-card">
+
+                <h4>Étude Biblique</h4>
+
+                <p>Mercredi à 18h00</p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="event-card">
+
+                <h4>Veillée de Prière</h4>
+
+                <p>Vendredi à 20h00</p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
-
-</div>
+```
 
 </section>
 
-<br/>
-<!-- CALL TO ACTION -->
-<section class="fond223 text-white text-center ev py-5">
+<!-- =====================================
+     CTA
+===================================== -->
 
+<section class="cta-section text-center py-5">
+
+```
 <div class="container">
 
-<h2>Rejoignez notre communauté</h2>
-<p>Venez adorer Dieu avec nous</p>
+    <h2 class="cta-title">
+        Rejoignez Notre Communauté
+    </h2>
 
-<a routerLink="/contact" class="btn btn-primary btn-lg">
-Nous contacter
-</a>
+    <p class="cta-text">
+        Venez adorer Dieu avec nous et grandir dans la foi.
+    </p>
+
+    <a routerLink="/contact" class="btn btn-gold btn-lg">
+        Nous Contacter
+    </a>
 
 </div>
+```
 
 </section>

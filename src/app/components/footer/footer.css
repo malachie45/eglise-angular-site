@@ -1,0 +1,140 @@
+
+/* ==========================
+   FOOTER GLOBAL
+========================== */
+
+.footer{
+    background:#0f0f0f;
+    color:#fff;
+}
+
+/* ==========================
+   TITRES
+========================== */
+
+.footer-title{
+    color:#D4AF37;
+    font-size:1.3rem;
+    font-weight:700;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.footer-title::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    margin-top:10px;
+    background:#D4AF37;
+}
+
+/* ==========================
+   TEXTE
+========================== */
+
+.footer-text{
+    color:rgba(255,255,255,0.75);
+    line-height:1.8;
+}
+
+/* ==========================
+   LIENS
+========================== */
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,0.75);
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#D4AF37;
+    padding-left:5px;
+}
+
+/* ==========================
+   HORAIRES
+========================== */
+
+.footer-schedule{
+    list-style:none;
+    padding:0;
+}
+
+.footer-schedule li{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    color:rgba(255,255,255,0.75);
+}
+
+.footer-schedule span{
+    color:#D4AF37;
+    font-weight:600;
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+.footer-divider{
+    border-color:rgba(255,255,255,0.1);
+    margin:30px 0;
+}
+
+/* ==========================
+   BOTTOM
+========================== */
+
+.footer-bottom p{
+    color:rgba(255,255,255,0.6);
+    margin:0;
+    font-size:0.9rem;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .footer-schedule li{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+}
+
+/* ==========================
+   ESPACEMENT GLOBAL FOOTER
+========================== */
+
+.footer{
+    background:#0f0f0f;
+    color:#fff;
+    margin-top:80px;   /* 👉 espace avec la dernière section */
+    padding-top:60px;  /* respiration interne */
+}
+
+.footer{
+    background:#0f0f0f;
+    color:#fff;
+    margin-top:80px;
+    padding:80px 0 30px;
+}
+
+.footer .container{
+    max-width:1140px; /* même logique Bootstrap standard */
+}

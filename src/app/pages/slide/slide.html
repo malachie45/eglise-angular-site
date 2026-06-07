@@ -1,16 +1,15 @@
 <div class="slider-container">
 
-  <div
-    class="slide"
-    [style.backgroundImage]="'url(' + slides[currentIndex].image + ')'">
+  <div class="slide"
+       [style.backgroundImage]="'url(' + slides[currentIndex].image + ')'">
 
     <div class="overlay">
 
-      <h1>
+      <h1 class="slide-title">
         {{ slides[currentIndex].title }}
       </h1>
 
-      <p>
+      <p class="slide-subtitle">
         {{ slides[currentIndex].subtitle }}
       </p>
 
@@ -18,7 +17,7 @@
 
   </div>
 
-  <!-- Boutons -->
+  <!-- NAVIGATION -->
   <button class="nav-btn prev" (click)="prevSlide()">
     ❮
   </button>
@@ -27,13 +26,12 @@
     ❯
   </button>
 
-  <!-- Indicateurs -->
+  <!-- DOTS -->
   <div class="dots">
 
-    <span
-      *ngFor="let slide of slides; let i = index"
-      [class.active]="i === currentIndex"
-      (click)="goToSlide(i)">
+    <span *ngFor="let slide of slides; let i = index"
+          [class.active]="i === currentIndex"
+          (click)="goToSlide(i)">
     </span>
 
   </div>

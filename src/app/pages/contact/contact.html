@@ -1,80 +1,212 @@
-<!-- HERO -->
-<section class="bg-dark text-white text-center d-flex align-items-center" style="height: 50vh;">
-  <div class="container">
-    <h1 class="display-4 fw-bold">Contactez-nous</h1>
-    <p class="lead">Nous sommes à votre écoute</p>
-  </div>
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="bg-dark text-white text-center d-flex align-items-center contact-hero">
+
+    <div class="container">
+
+        <h1 class="hero-title">
+            Contactez-Nous
+        </h1>
+
+        <p class="hero-subtitle">
+            Une question, un besoin de prière, une demande d'information
+            ou l'envie de rejoindre notre assemblée ?
+            Notre équipe est à votre écoute.
+        </p>
+
+    </div>
+
 </section>
 
-<!-- CONTACT + FORM -->
+<!-- =====================================
+     CONTACT
+===================================== -->
+
 <section class="container py-5">
-  <div class="row">
+
+```
+<h2 class="section-title">
+    Prenons Contact
+</h2>
+
+<p class="section-subtitle">
+    Une équipe est disponible pour vous accueillir et vous accompagner.
+</p>
+
+<div class="row g-5">
 
     <!-- INFOS -->
-    <div class="col-md-5 mb-4">
-      <h3>Nos coordonnées</h3>
-      <p><strong>📍 Adresse :</strong> Abidjan, Côte d'Ivoire</p>
-      <p><strong>📞 Téléphone :</strong> +225 00 00 00 00</p>
-      <p><strong>📧 Email :</strong> contact@eglise.com</p>
 
-      <hr>
+    <div class="col-lg-4">
 
-      <h4>Horaires</h4>
-      <p>Dimanche : 9h - 12h</p>
-      <p>Mercredi : 18h - 20h</p>
-      <p>Vendredi : 20h - 22h</p>
+        <div class="contact-card">
+
+            <h3>Nos Coordonnées</h3>
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <strong>Adresse</strong>
+                    <p>Abidjan, Côte d'Ivoire</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📞</span>
+                <div>
+                    <strong>Téléphone</strong>
+                    <p>+225 00 00 00 00</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📧</span>
+                <div>
+                    <strong>Email</strong>
+                    <p>contact@eglise.com</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h4>Horaires des Cultes</h4>
+
+            <ul class="schedule-list">
+
+                <li>
+                    <strong>Dimanche</strong>
+                    <span>09h00 - 12h00</span>
+                </li>
+
+                <li>
+                    <strong>Mercredi</strong>
+                    <span>18h00 - 20h00</span>
+                </li>
+
+                <li>
+                    <strong>Vendredi</strong>
+                    <span>20h00 - 22h00</span>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
 
     <!-- FORMULAIRE -->
-    <div class="col-md-7">
-      <h3>Envoyez-nous un message</h3>
 
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Nom complet">
+    <div class="col-lg-8">
+
+        <div class="contact-form-card">
+
+            <h3 class="mb-4">
+                Envoyez-nous un Message
+            </h3>
+
+            <form>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <input
+                            type="text"
+                            class="form-control custom-field"
+                            placeholder="Nom complet">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <input
+                            type="email"
+                            class="form-control custom-field"
+                            placeholder="Adresse email">
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <input
+                        type="text"
+                        class="form-control custom-field"
+                        placeholder="Sujet">
+
+                </div>
+
+                <div class="mb-4">
+
+                    <textarea
+                        rows="6"
+                        class="form-control custom-field"
+                        placeholder="Votre message">
+                    </textarea>
+
+                </div>
+
+                <button class="btn btn-gold w-100">
+
+                    Envoyer le Message
+
+                </button>
+
+            </form>
+
         </div>
 
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Email">
-        </div>
-
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Sujet">
-        </div>
-
-        <div class="mb-3">
-          <textarea class="form-control" rows="5" placeholder="Votre message"></textarea>
-        </div>
-
-        <button class="btn btn-primary w-100">
-          Envoyer le message
-        </button>
-      </form>
     </div>
 
-  </div>
+</div>
+```
+
 </section>
 
-<!-- MAP -->
-<section class="container-fluid px-0">
-  <iframe
+<!-- =====================================
+     MAP
+===================================== -->
+
+<section class="map-section">
+
+```
+<iframe
     src="https://www.google.com/maps?q=Abidjan&output=embed"
-    width="100%"
-    height="400"
-    style="border:0;"
-    allowfullscreen=""
     loading="lazy">
-  </iframe>
+</iframe>
+```
+
 </section>
 
-<!-- CTA -->
-<section class="bg-dark text-white text-center py-5">
-  <div class="container">
-    <h2>Rejoignez-nous ce dimanche</h2>
-    <p>Venez vivre une expérience spirituelle unique</p>
+<!-- =====================================
+     CTA
+===================================== -->
 
-    <a routerLink="/" class="btn btn-primary btn-lg">
-      Accueil
+<section class="cta-section py-5">
+
+```
+<div class="container text-center">
+
+    <h2 class="section-title text-white">
+        Rejoignez-Nous ce Dimanche
+    </h2>
+
+    <p class="cta-text">
+        Venez vivre un moment de communion, de louange
+        et de transformation dans la présence de Dieu.
+    </p>
+
+    <a routerLink="/"
+       class="btn btn-gold">
+
+        Retour à l'Accueil
+
     </a>
-  </div>
+
+</div>
+```
+
 </section>

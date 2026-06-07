@@ -1,118 +1,220 @@
-<!-- HERO -->
-<section class="bg-dark text-white text-center d-flex align-items-center" style="height: 50vh;">
-  <div class="container">
-    <h1 class="display-4 fw-bold">Sermons</h1>
-    <p class="lead">Écoutez et soyez transformés par la Parole de Dieu</p>
-  </div>
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="bg-dark text-white text-center d-flex align-items-center sermon-hero">
+
+```
+<div class="container">
+
+    <h1 class="hero-title">
+        Sermons
+    </h1>
+
+    <p class="hero-subtitle">
+        Écoutez, méditez et laissez-vous transformer
+        par la Parole vivante de Dieu.
+    </p>
+
+</div>
+```
+
 </section>
 
-<!-- FILTRE -->
-<section class="container py-4">
-  <div class="row justify-content-center">
+<!-- =====================================
+     RECHERCHE
+===================================== -->
 
-    <div class="col-md-6">
-      <input 
-        type="text" 
-        class="form-control" 
-        placeholder="Rechercher un sermon..."
-      >
-    </div>
-
-  </div>
-</section>
-
-<!-- LISTE DES SERMONS -->
 <section class="container py-5">
-  <div class="row">
 
-    <!-- SERMON 1 -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm h-100">
-        <img src="assets/sermon1.jpg" class="card-img-top" alt="sermon">
+```
+<div class="row justify-content-center">
 
-        <div class="card-body">
-          <h5 class="card-title">La foi qui déplace les montagnes</h5>
-          <p class="card-text">
-            Découvrez comment développer une foi inébranlable en Dieu.
-          </p>
-        </div>
+    <div class="col-lg-6">
 
-        <div class="card-footer bg-white border-0">
-          <small class="text-muted">Dimanche 10 Mars 2026</small>
-        </div>
-      </div>
+        <input
+            type="text"
+            class="form-control sermon-search"
+            placeholder="Rechercher un sermon...">
+
     </div>
 
-    <!-- SERMON 2 -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm h-100">
-        <img src="assets/sermon2.jpg" class="card-img-top" alt="sermon">
+</div>
+```
 
-        <div class="card-body">
-          <h5 class="card-title">Marcher dans l'amour de Dieu</h5>
-          <p class="card-text">
-            L'amour est la clé de la vie chrétienne.
-          </p>
-        </div>
-
-        <div class="card-footer bg-white border-0">
-          <small class="text-muted">Dimanche 3 Mars 2026</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- SERMON 3 -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm h-100">
-        <img src="assets/sermon3.jpg" class="card-img-top" alt="sermon">
-
-        <div class="card-body">
-          <h5 class="card-title">La puissance de la prière</h5>
-          <p class="card-text">
-            Apprenez à prier efficacement.
-          </p>
-        </div>
-
-        <div class="card-footer bg-white border-0">
-          <small class="text-muted">Dimanche 25 Février 2026</small>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </section>
 
-<!-- SERMON VEDETTE (VIDEO) -->
-<section class="bg-light py-5">
-  <div class="container">
+<!-- =====================================
+     SERMONS
+===================================== -->
 
-    <h2 class="text-center mb-5">Sermon en vedette</h2>
+<section class="container pb-5">
+
+```
+<h2 class="section-title">
+    Messages Récents
+</h2>
+
+<p class="section-subtitle">
+    Retrouvez les derniers enseignements de notre assemblée.
+</p>
+
+<div class="row g-4">
+
+    <div class="col-lg-4">
+
+        <div class="sermon-card">
+
+            <img src="assets/sermon1.jpg"
+                 alt="Sermon">
+
+            <div class="sermon-content">
+
+                <h4>
+                    La foi qui déplace les montagnes
+                </h4>
+
+                <p>
+                    Découvrez comment développer une foi
+                    inébranlable en Dieu.
+                </p>
+
+                <span class="sermon-date">
+                    Dimanche 10 Mars 2026
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="sermon-card">
+
+            <img src="assets/sermon2.jpg"
+                 alt="Sermon">
+
+            <div class="sermon-content">
+
+                <h4>
+                    Marcher dans l'amour de Dieu
+                </h4>
+
+                <p>
+                    L'amour est la clé de la vie chrétienne.
+                </p>
+
+                <span class="sermon-date">
+                    Dimanche 3 Mars 2026
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="sermon-card">
+
+            <img src="assets/sermon3.jpg"
+                 alt="Sermon">
+
+            <div class="sermon-content">
+
+                <h4>
+                    La puissance de la prière
+                </h4>
+
+                <p>
+                    Apprenez à prier efficacement.
+                </p>
+
+                <span class="sermon-date">
+                    Dimanche 25 Février 2026
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================
+     VIDEO VEDETTE
+===================================== -->
+
+<section class="sermon-featured py-5">
+
+```
+<div class="container">
+
+    <h2 class="section-title">
+        Sermon en Vedette
+    </h2>
+
+    <p class="section-subtitle">
+        Un message inspirant à découvrir cette semaine.
+    </p>
 
     <div class="row justify-content-center">
-      <div class="col-md-8">
 
-        <div class="ratio ratio-16x9">
-          <iframe 
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="YouTube video"
-            allowfullscreen>
-          </iframe>
+        <div class="col-lg-8">
+
+            <div class="featured-video">
+
+                <div class="ratio ratio-16x9">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/VIDEO_ID"
+                        title="YouTube video"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
         </div>
 
-      </div>
     </div>
 
-  </div>
+</div>
+```
+
 </section>
 
-<!-- CTA -->
-<section class="bg-dark text-white text-center py-5">
-  <div class="container">
-    <h2>Ne manquez aucun message</h2>
-    <p>Suivez-nous pour rester connecté à la parole de Dieu</p>
+<!-- =====================================
+     CTA
+===================================== -->
 
-    <a routerLink="/contact" class="btn btn-primary btn-lg">
-      Nous contacter
+<section class="cta-section py-5">
+
+```
+<div class="container text-center">
+
+    <h2 class="section-title text-white">
+        Ne Manquez Aucun Message
+    </h2>
+
+    <p class="cta-text">
+        Restez connecté à la Parole de Dieu et à la vie de notre assemblée.
+    </p>
+
+    <a routerLink="/contact"
+       class="btn btn-gold">
+        Nous Contacter
     </a>
-  </div>
+
+</div>
+```
+
 </section>

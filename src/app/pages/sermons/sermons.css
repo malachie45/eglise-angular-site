@@ -1,0 +1,169 @@
+/* ==================================
+HERO
+================================== */
+
+.sermon-hero{
+height:50vh;
+}
+
+.hero-title{
+color:#D4AF37;
+font-size:4rem;
+font-weight:900;
+text-transform:uppercase;
+letter-spacing:3px;
+}
+
+.hero-title::after{
+content:"";
+display:block;
+width:150px;
+height:4px;
+background:#D4AF37;
+margin:20px auto;
+}
+
+.hero-subtitle{
+max-width:800px;
+margin:auto;
+font-size:1.2rem;
+}
+
+/* ==================================
+TITRES
+================================== */
+
+.section-title{
+text-align:center;
+color:#D4AF37;
+font-size:3rem;
+font-weight:800;
+text-transform:uppercase;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:120px;
+height:4px;
+background:#D4AF37;
+margin:15px auto;
+}
+
+.section-subtitle{
+text-align:center;
+color:#777;
+margin-bottom:50px;
+}
+
+/* ==================================
+RECHERCHE
+================================== */
+
+.sermon-search{
+padding:15px 25px;
+border-radius:50px;
+border:2px solid #e5e5e5;
+}
+
+.sermon-search:focus{
+border-color:#D4AF37;
+box-shadow:none;
+}
+
+/* ==================================
+CARTE SERMON
+================================== */
+
+.sermon-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+height:100%;
+}
+
+.sermon-card:hover{
+transform:translateY(-8px);
+}
+
+.sermon-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.sermon-content{
+padding:25px;
+}
+
+.sermon-content h4{
+color:#D4AF37;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.sermon-date{
+color:#888;
+font-size:.9rem;
+}
+
+/* ==================================
+VIDEO
+================================== */
+
+.sermon-featured{
+background:#f8f9fa;
+}
+
+.featured-video{
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* ==================================
+CTA
+================================== */
+
+.cta-section{
+background:#111;
+}
+
+.cta-text{
+color:white;
+margin-bottom:30px;
+}
+
+.btn-gold{
+background:#D4AF37;
+color:white;
+border:none;
+padding:14px 35px;
+border-radius:50px;
+font-weight:600;
+}
+
+.btn-gold:hover{
+background:#b89322;
+color:white;
+}
+
+/* ==================================
+MOBILE
+================================== */
+
+@media(max-width:768px){
+
+
+.hero-title{
+    font-size:2.5rem;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+
+}

@@ -1,147 +1,268 @@
-<!-- HERO -->
-<section class="bg-dark text-white text-center d-flex align-items-center" style="height: 50vh;">
-  <div class="container">
-    <h1 class="display-4 fw-bold">Événements</h1>
-    <p class="lead">Découvrez nos prochains rendez-vous spirituels</p>
-  </div>
-</section>
+<!-- =====================================
+     HERO
+===================================== -->
+<section class="bg-dark text-white text-center d-flex align-items-center event-hero">
 
-<!-- FILTRE -->
-<section class="container py-4">
-  <div class="row justify-content-center">
+    <div class="container">
 
-    <div class="col-md-4">
-      <input type="text" class="form-control" placeholder="Rechercher un événement...">
-    </div>
+        <h1 class="hero-title">
+            Événements
+        </h1>
 
-    <div class="col-md-3">
-      <select class="form-select">
-        <option selected>Catégorie</option>
-        <option>Culte</option>
-        <option>Prière</option>
-        <option>Jeunesse</option>
-      </select>
-    </div>
-
-  </div>
-</section>
-
-<!-- LISTE DES EVENEMENTS -->
-<section class="container py-5">
-  <div class="row">
-
-    <!-- EVENT 1 -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm h-100">
-        <img src="assets/event1.jpg" class="card-img-top" alt="event">
-
-        <div class="card-body">
-          <h5 class="card-title">Culte du dimanche</h5>
-          <p class="card-text">
-            Un moment puissant de louange, adoration et enseignement.
-          </p>
-
-          <p><strong>📅</strong> Dimanche - 9h</p>
-          <p><strong>📍</strong> Église principale</p>
-        </div>
-
-        <div class="card-footer bg-white border-0">
-          <a routerLink="/contact" class="btn btn-primary w-100">
-            Participer
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- EVENT 2 -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm h-100">
-        <img src="assets/event2.jpg" class="card-img-top" alt="event">
-
-        <div class="card-body">
-          <h5 class="card-title">Étude biblique</h5>
-          <p class="card-text">
-            Approfondissez votre connaissance de la Parole de Dieu.
-          </p>
-
-          <p><strong>📅</strong> Mercredi - 18h</p>
-          <p><strong>📍</strong> Salle de réunion</p>
-        </div>
-
-        <div class="card-footer bg-white border-0">
-          <a routerLink="/contact" class="btn btn-primary w-100">
-            Participer
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- EVENT 3 -->
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm h-100">
-        <img src="assets/event3.jpg" class="card-img-top" alt="event">
-
-        <div class="card-body">
-          <h5 class="card-title">Veillée de prière</h5>
-          <p class="card-text">
-            Une nuit consacrée à la prière et à la présence de Dieu.
-          </p>
-
-          <p><strong>📅</strong> Vendredi - 20h</p>
-          <p><strong>📍</strong> Sanctuaire</p>
-        </div>
-
-        <div class="card-footer bg-white border-0">
-          <a routerLink="/contact" class="btn btn-primary w-100">
-            Participer
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- EVENEMENT VEDETTE -->
-<section class="bg-light py-5">
-  <div class="container">
-
-    <h2 class="text-center mb-5">Événement spécial</h2>
-
-    <div class="row align-items-center">
-
-      <div class="col-md-6">
-        <img src="assets/special-event.jpg" class="img-fluid rounded">
-      </div>
-
-      <div class="col-md-6">
-        <h3>Conférence spirituelle 2026</h3>
-        <p>
-          Un grand moment de réveil avec des orateurs inspirés, 
-          des temps forts de louange et des miracles.
+        <p class="hero-subtitle">
+            Découvrez nos prochains rendez-vous spirituels,
+            des moments de prière, d’adoration et de communion
+            dans la présence de Dieu.
         </p>
 
-        <p><strong>📅</strong> 15 - 17 Avril 2026</p>
-        <p><strong>📍</strong> Tabernacle La Pierre de Faîte</p>
+    </div>
 
-        <a routerLink="/contact" class="btn btn-dark">
-          S'inscrire
-        </a>
-      </div>
+</section>
+
+<!-- =====================================
+     FILTRES
+===================================== -->
+
+<section class="container py-5">
+
+```
+<div class="row justify-content-center g-3">
+
+    <div class="col-lg-4">
+
+        <input
+            type="text"
+            class="form-control custom-input"
+            placeholder="Rechercher un événement...">
 
     </div>
 
-  </div>
+    <div class="col-lg-3">
+
+        <select class="form-select custom-input">
+
+            <option selected>
+                Catégorie
+            </option>
+
+            <option>Culte</option>
+            <option>Prière</option>
+            <option>Jeunesse</option>
+
+        </select>
+
+    </div>
+
+</div>
+```
+
 </section>
 
-<!-- CTA -->
-<section class="bg-dark text-white text-center py-5">
-  <div class="container">
-    <h2>Ne ratez aucun événement</h2>
-    <p>Rejoignez-nous et vivez des moments puissants avec Dieu</p>
+<!-- =====================================
+     EVENEMENTS
+===================================== -->
 
-    <a routerLink="/contact" class="btn btn-primary btn-lg">
-      Nous contacter
+<section class="container pb-5">
+
+```
+<h2 class="section-title">
+    Prochains Événements
+</h2>
+
+<p class="section-subtitle">
+    Participez à la vie de notre assemblée.
+</p>
+
+<div class="row g-4">
+
+    <div class="col-lg-4">
+
+        <div class="event-card">
+
+            <img src="assets/event1.jpg" alt="Event">
+
+            <div class="event-content">
+
+                <h4>Culte du Dimanche</h4>
+
+                <p>
+                    Un moment puissant de louange,
+                    d'adoration et d'enseignement.
+                </p>
+
+                <div class="event-info">
+                    📅 Dimanche - 9h00
+                </div>
+
+                <div class="event-info">
+                    📍 Église principale
+                </div>
+
+                <a routerLink="/contact"
+                   class="btn btn-gold w-100 mt-3">
+                    Participer
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="event-card">
+
+            <img src="assets/event2.jpg" alt="Event">
+
+            <div class="event-content">
+
+                <h4>Étude Biblique</h4>
+
+                <p>
+                    Approfondissez votre connaissance
+                    de la Parole de Dieu.
+                </p>
+
+                <div class="event-info">
+                    📅 Mercredi - 18h00
+                </div>
+
+                <div class="event-info">
+                    📍 Salle de réunion
+                </div>
+
+                <a routerLink="/contact"
+                   class="btn btn-gold w-100 mt-3">
+                    Participer
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="event-card">
+
+            <img src="assets/event3.jpg" alt="Event">
+
+            <div class="event-content">
+
+                <h4>Veillée de Prière</h4>
+
+                <p>
+                    Une nuit consacrée à la prière
+                    et à la présence de Dieu.
+                </p>
+
+                <div class="event-info">
+                    📅 Vendredi - 20h00
+                </div>
+
+                <div class="event-info">
+                    📍 Sanctuaire
+                </div>
+
+                <a routerLink="/contact"
+                   class="btn btn-gold w-100 mt-3">
+                    Participer
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================
+     EVENEMENT VEDETTE
+===================================== -->
+
+<section class="featured-event-section py-5">
+
+```
+<div class="container">
+
+    <h2 class="section-title">
+        Événement Spécial
+    </h2>
+
+    <p class="section-subtitle">
+        Un rendez-vous exceptionnel à ne pas manquer.
+    </p>
+
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+
+            <img
+                src="assets/special-event.jpg"
+                class="img-fluid featured-event-image"
+                alt="Conférence">
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <h3 class="featured-title">
+                Conférence Spirituelle 2026
+            </h3>
+
+            <p>
+                Un grand moment de réveil avec des orateurs inspirés,
+                des temps forts de louange, d'enseignement
+                et de manifestations de la puissance de Dieu.
+            </p>
+
+            <p><strong>📅</strong> 15 - 17 Avril 2026</p>
+
+            <p><strong>📍</strong> Tabernacle La Pierre de Faîte</p>
+
+            <a routerLink="/contact"
+               class="btn btn-gold">
+                S'inscrire
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =====================================
+     CTA
+===================================== -->
+
+<section class="cta-section py-5">
+
+```
+<div class="container text-center">
+
+    <h2 class="section-title text-white">
+        Ne Ratez Aucun Événement
+    </h2>
+
+    <p class="cta-text">
+        Rejoignez-nous et vivez des moments puissants avec Dieu.
+    </p>
+
+    <a routerLink="/contact"
+       class="btn btn-gold">
+        Nous Contacter
     </a>
-  </div>
+
+</div>
+```
+
 </section>

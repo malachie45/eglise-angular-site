@@ -1,29 +1,99 @@
-.logo{
-   height:50px;
-   width:auto;
-   background: transparent !important;
-    object-fit: contain;
 
-    display: block;
+/* ==========================
+   NAVBAR GLOBAL
+========================== */
+
+.custom-navbar{
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(212,175,55,0.15);
 }
+
+/* ==========================
+   LOGO + BRAND
+========================== */
 
 .brand-container{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
 }
 
 .logo{
-    height: 55px;
-    width: auto;
-    display: block;
+    height:55px;
+    width:auto;
+    object-fit:contain;
 }
 
+/* TITRE ÉGLISE */
 .church-title{
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    line-height: 1.2;
+    color:#D4AF37;
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:1px;
+    line-height:1.2;
+}
+
+/* ==========================
+   LINKS MENU
+========================== */
+
+.navbar-nav .nav-link{
+    color:rgba(255,255,255,0.8);
+    font-weight:500;
+    margin:0 8px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* hover doré */
+.navbar-nav .nav-link:hover{
+    color:#D4AF37;
+}
+
+/* underline animation */
+.navbar-nav .nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#D4AF37;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover::after{
+    width:100%;
+}
+
+/* active link (optionnel Angular) */
+.navbar-nav .nav-link.active{
+    color:#D4AF37;
+}
+
+/* ==========================
+   TOGGLER MOBILE
+========================== */
+
+.navbar-toggler{
+    border:1px solid rgba(212,175,55,0.3);
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .church-title{
+        font-size:14px;
+    }
+
 }

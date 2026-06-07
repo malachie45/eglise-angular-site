@@ -1,23 +1,214 @@
-.hero{
-height:80vh;
-background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url('/assets/church.jpg');
+/* ==========================
+BACKGROUNDS EXISTANTS
+========================== */
+
+.fond{
+background:url('/assets/images/fond1.png');
 background-size:cover;
 background-position:center;
 }
 
-.ev{
-    width: 1274px;
-}
-.fond{
-    background: url('/assets/images/fond1.png');
-}
-
 .fond22{
-    background:url('/assets/images/fond22.png');
-    
+background:url('/assets/images/fond22.png');
+background-size:cover;
+background-position:center;
 }
 
 .fond223{
 background:url('/assets/images/fond3.png');
+background-size:cover;
+background-position:center;
+}
+
+/* ==========================
+TITRES
+========================== */
+
+.section-title{
+color:#D4AF37;
+font-size:3rem;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:120px;
+height:4px;
+background:#D4AF37;
+margin-top:15px;
+}
+
+.text-center.section-title::after,
+.section-title.text-white::after{
+margin-left:auto;
+margin-right:auto;
+}
+
+.section-subtitle{
+margin-bottom:50px;
+opacity:.9;
+}
+
+/* ==========================
+MISSION
+========================== */
+
+.home-image{
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.home-text{
+font-size:1.1rem;
+line-height:1.9;
+color:#555;
+}
+
+/* ==========================
+BOUTON OR
+========================== */
+
+.btn-gold{
+background:#D4AF37;
+color:white;
+border:none;
+padding:12px 35px;
+border-radius:50px;
+font-weight:600;
+}
+
+.btn-gold:hover{
+background:#b89322;
+color:white;
+}
+
+/* ==========================
+CARTES
+========================== */
+
+.ministry-card,
+.event-card{
+background:white;
+border-radius:18px;
+padding:35px;
+text-align:center;
+border-top:5px solid #D4AF37;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+height:100%;
+}
+
+.ministry-card:hover,
+.event-card:hover{
+transform:translateY(-8px);
+}
+
+.ministry-card h4,
+.event-card h4{
+color:#D4AF37;
+font-weight:700;
+margin-bottom:15px;
+}
+
+/* ==========================
+SERMON
+========================== */
+
+.sermon-video{
+overflow:hidden;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* ==========================
+CTA
+========================== */
+
+.cta-title{
+color:#D4AF37;
+font-size:3rem;
+font-weight:800;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.cta-text{
+color:white;
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+
+.section-title{
+    font-size:2rem;
+}
+
+.cta-title{
+    font-size:2rem;
+}
+
+
+}
+
+/* ==========================
+   EVENEMENTS
+========================== */
+
+.events-section{
+    background:#f8f9fa;
+}
+
+.events-section .section-subtitle{
+    color:#666;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta-section{
+    background:#111;
+}
+
+.cta-section .cta-text{
+    color:rgba(255,255,255,.9);
+}
+
+.cta-section .section-title{
+    color:#D4AF37;
+}
+
+.cta-section .section-title::after{
+    background:#D4AF37;
+}
+
+.event-card{
+    background:white;
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    border-top:5px solid #D4AF37;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.event-card h4{
+    color:#D4AF37;
+    font-weight:700;
+    margin-bottom:15px;
 }
